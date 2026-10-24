@@ -1,10 +1,34 @@
 {
-  "name": "warp",
-  "ticker": "WARP",
-  "category": "Launchpads_Memes",
+  "name": "new-world-ai-mcp",
+  "version": "1.0.0",
+  "description": "New World AI Model Context Protocol Server for Post-Scarcity Civilization, Planetary Abundance & Ecological Restoration",
   "tools": [
-    { "name": "query_conway_state", "description": "Fetches current cellular automaton lattice" },
-    { "name": "execute_x402_settlement", "description": "Executes HTTP 402 micro-settlement" },
-    { "name": "fetch_quicknode_rpc", "description": "Queries QuickNode multi-chain endpoint" }
+    {
+      "name": "audit_planetary_carrying_capacity",
+      "description": "Model and verify resource flows, energy generation, and atmospheric carbon metrics against planetary boundaries",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "bioregion": { "type": "string" },
+          "energy_clean_ratio": { "type": "number" },
+          "soil_regeneration_index": { "type": "number" }
+        },
+        "required": ["bioregion", "energy_clean_ratio"]
+      }
+    },
+    {
+      "name": "disburse_planetary_grant",
+      "description": "Release direct micro-escrows to open-source clean energy microgrids, community seed banks, and reforestation collectives",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sector": { "type": "string" },
+          "recipient": { "type": "string" },
+          "amount_wei": { "type": "string" },
+          "impact_proof": { "type": "string" }
+        },
+        "required": ["sector", "recipient", "amount_wei"]
+      }
+    }
   ]
 }
